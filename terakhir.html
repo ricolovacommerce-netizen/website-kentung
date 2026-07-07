@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Will You Stay With Me Forever?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>❤️ Will You Stay With Me Forever? ❤️</h1>
+
+    <p>Aku berharap kita bisa terus bersama selamanya. ❤️</p>
+
+    <br>
+
+    <button onclick="jawabYes()">YES ❤️</button>
+
+    <button id="no" onmouseover="lari()">NO 😢</button>
+
+    <script>
+
+        function jawabYes() {
+            alert("Yeay!! ❤️ Aku Sayang Kamu ❤️");
+        }
+
+        function lari() {
+
+            let tombol = document.getElementById("no");
+
+            let x = Math.random() * 400;
+
+            let y = Math.random() * 300;
+
+            tombol.style.position = "absolute";
+
+            tombol.style.left = x + "px";
+
+            tombol.style.top = y + "px";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
