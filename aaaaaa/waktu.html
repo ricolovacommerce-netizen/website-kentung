@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lama Bersama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>⏳ Lama Bersama</h1>
+
+    <h2 id="hari"></h2>
+
+    <script>
+        let tanggalJadian = new Date("2025-05-10");
+
+        function hitungHari() {
+            let sekarang = new Date();
+            let selisih = sekarang - tanggalJadian;
+
+            let hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
+
+            document.getElementById("hari").innerHTML =
+                hari + " Hari Bersama ❤️";
+        }
+
+        hitungHari();
+    </script>
+    <br><br>
+
+    <a href="terakhir.html">
+        <button>Lanjut ➜</button>
+    </a>
+</body>
+
+</html>

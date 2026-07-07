@@ -1,0 +1,44 @@
+body {
+    background: pink;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 100px;
+}
+
+h1 {
+    color: red;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+}
+
+button:hover {
+    background: darkred;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
